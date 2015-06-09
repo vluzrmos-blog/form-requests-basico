@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "24c3946acc997e3f3eca7fc5c99585b2",
+    "hash": "0b5df025d10e868a834bc76578ccfd98",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -407,6 +407,55 @@
                 "tokenizer"
             ],
             "time": "2015-03-11 20:06:43"
+        },
+        {
+            "name": "kennedytedesco/validation",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KennedyTedesco/Validation.git",
+                "reference": "7e4582507f8026e95e977841e5db3356fb158da4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KennedyTedesco/Validation/zipball/7e4582507f8026e95e977841e5db3356fb158da4",
+                "reference": "7e4582507f8026e95e977841e5db3356fb158da4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.0.*@dev",
+                "php": ">=5.4",
+                "respect/validation": "~0.8.0"
+            },
+            "require-dev": {
+                "laravel/framework": "5.0.*@dev",
+                "orchestra/testbench": "3.0.*@dev",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "KennedyTedesco\\Validation\\": "src/Validation"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kennedy Tedesco",
+                    "email": "kennedyt.tw@gmail.com"
+                }
+            ],
+            "description": "The power of 'Respect Validation' on Laravel.",
+            "keywords": [
+                "laravel",
+                "respect",
+                "rules",
+                "validation"
+            ],
+            "time": "2015-05-26 14:04:38"
         },
         {
             "name": "laravel/framework",
@@ -933,6 +982,66 @@
                 "shell"
             ],
             "time": "2015-02-25 20:35:54"
+        },
+        {
+            "name": "respect/validation",
+            "version": "0.8.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Respect/Validation.git",
+                "reference": "aaca258bedf4000df507b1f143dc226b8fab9cd7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Respect/Validation/zipball/aaca258bedf4000df507b1f143dc226b8fab9cd7",
+                "reference": "aaca258bedf4000df507b1f143dc226b8fab9cd7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "malkusch/bav": "~1.0",
+                "phpunit/phpunit": "~4.0",
+                "symfony/validator": "~2.6.9",
+                "zendframework/zend-validator": "~2.3"
+            },
+            "suggest": {
+                "ext-bcmath": "Arbitrary Precision Mathematics",
+                "ext-mbstring": "Multibyte String Functions",
+                "malkusch/bav": "German bank account validation",
+                "symfony/validator": "Use Symfony validator through Respect\\Validation",
+                "zendframework/zend-validator": "Use Zend Framework validator through Respect\\Validation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Respect\\Validation\\": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD Style"
+            ],
+            "authors": [
+                {
+                    "name": "Respect/Validation Contributors",
+                    "homepage": "https://github.com/Respect/Validation/graphs/contributors"
+                }
+            ],
+            "description": "The most awesome validation engine ever created for PHP",
+            "homepage": "http://respect.li",
+            "keywords": [
+                "respect",
+                "validation",
+                "validator"
+            ],
+            "time": "2015-06-06 13:03:35"
         },
         {
             "name": "swiftmailer/swiftmailer",

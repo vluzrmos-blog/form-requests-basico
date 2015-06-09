@@ -1,5 +1,6 @@
 <?php namespace App\Providers;
 
+use App\Validation\Validator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider {
@@ -29,6 +30,16 @@ class AppServiceProvider extends ServiceProvider {
 			'Illuminate\Contracts\Auth\Registrar',
 			'App\Services\Registrar'
 		);
+
+		$this->app->afterResolving('validator', function($validator){
+
+			/** @var \Illuminate\Validation\Factory $validator */
+
+			$validator->resolver(function($translator, $data, $rules, $messages, $customAttributes ){
+				return new Validator($translator, $data, $rules, $messages, $customAttributes);
+			});
+
+		});
 	}
 
 }
